@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tagovi -->
+    <title>e-stolice.rs | SteNa La Pizu - Vrhunske drvene sklopive stolice</title>
+    <meta name="description" content="Ručno rađene drvene sklopive stolice i ležaljke od kvalitetne bukovine. Idealne za plažu, Štrand, prirodu i opuštanje. SteNa La Pizu - Uvali se i uživaj.">
+    <meta name="keywords" content="drvene stolice, sklopive stolice, ležaljke, bukovo drvo, e-stolice, SteNa La Pizu, Novi Sad, plaža, Štrand">
+    <meta name="author" content="SteNa La Pizu">
+    <link rel="canonical" href="https://www.e-stolice.rs/">
+
+    <!-- Open Graph / Društvene Mreže i AI Prepoznavanje -->
+    <meta property="og:title" content="e-stolice.rs | SteNa La Pizu">
+    <meta property="og:description" content="Vrhunske drvene stolice stvorene za potpuno opuštanje na pesku ili u šumi. Ručni rad iz domaće radionice.">
+    <meta property="og:image" content="https://i.postimg.cc/J7XCKVq9/Gemini-Generated-Image-drongsdrongsdron.png">
+    <meta property="og:url" content="https://www.e-stolice.rs/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="sr_RS">
+
+    <!-- Schema.org Structured Data (Optimizovano za AI modele i Google pretragu) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "e-stolice.rs - SteNa La Pizu",
+      "image": "https://i.postimg.cc/J7XCKVq9/Gemini-Generated-Image-drongsdrongsdron.png",
+      "@id": "https://www.e-stolice.rs",
+      "url": "https://www.e-stolice.rs",
+      "telephone": "",
+      "address": {
+        "@postalAddress": "",
+        "addressLocality": "Novi Sad",
+        "addressCountry": "RS"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 45.267136,
+        "longitude": 19.833549
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "09:00",
+        "closes": "20:00"
+      },
+      "sameAs": [
+        "https://www.e-stolice.rs"
+      ],
+      "description": "Proizvodnja i dizajn originalnih drvenih sklopivih stolica i ležaljki od kvalitetnog bukovog drveta."
+    }
+    </script>
+
+    <style>
+        :root {
+            --boja-peska: #f9f6f0;
+            --boja-teksta: #2c3e50;
+            --tirkizna-more: #1abc9c;
+            --tirkizna-tamna: #16a085;
+            --prolecna-zelena: #2ecc71;
+            --sunce-zuta: #f1c40f;
+            --drvo-braon: #d35400;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--boja-peska);
+            color: var(--boja-teksta);
+            line-height: 1.6;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* Navigacija */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-kontejner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--tirkizna-tamna);
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .brend-podnaslov {
+            font-size: 12px;
+            color: #7f8c8d;
+            font-weight: normal;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--boja-teksta);
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover, nav ul li a.aktivno {
+            color: var(--tirkizna-more);
+        }
+
+        /* Pametni Lajt-Motiv Frejm */
+        .hero-frejm {
+            margin-top: 70px;
+            position: relative;
+            width: 100%;
+            height: 600px; 
+            overflow: hidden;
+            background-color: #2c3e50;
+        }
+
+        .slajd {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1.2s ease-in-out;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .slajd.aktivno-slajd {
+            opacity: 1;
+        }
+
+        .hero-tekst {
+            color: white;
+            background: rgba(44, 62, 80, 0.85); 
+            padding: 40px 45px;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+            max-width: 850px; 
+            width: auto;
+            margin-left: 5%; 
+            transition: all 0.5s ease;
+            z-index: 2;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .centriran-sadrzaj {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .provokacija {
+            font-size: 42px;
+            color: var(--sunce-zuta);
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+            text-align: center;
+        }
+
+        .odgovor {
+            font-size: 46px;
+            color: var(--tirkizna-more);
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+            text-align: center;
+        }
+
+        .hero-tekst h1 {
+            font-size: 32px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            line-height: 1.2;
+        }
+
+        .hero-tekst p {
+            font-size: 16px;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+
+        /* Dugme */
+        .btn {
+            display: inline-block;
+            padding: 12px 35px;
+            background-color: var(--tirkizna-more);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .btn:hover {
+            background-color: var(--tirkizna-tamna);
+            transform: translateY(-2px);
+        }
+
+        /* Glavni sadržaj */
+        .glavni-sadrzaj {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .dobrodoslica h2 {
+            font-size: 32px;
+            color: var(--tirkizna-tamna);
+            margin-bottom: 20px;
+        }
+
+        .dobrodoslica p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            color: #555;
+        }
+
+        /* Mreža kartica */
+        .mreza-kartica {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .kartica {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+            text-align: left;
+        }
+
+        .kartica:hover {
+            transform: translateY(-5px);
+        }
+
+        .kartica h3 {
+            margin-bottom: 15px;
+            font-size: 20px;
+            color: var(--boja-teksta);
+        }
+
+        .kartica p {
+            color: #555;
+            font-size: 15px;
+        }
+
+        /* --- KORISNIČKI SCENARIJI --- */
+        .upotreba-sekcija {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 60px;
+            text-align: left;
+        }
+        .upotreba-sekcija h2 {
+            font-size: 28px;
+            color: var(--boja-teksta);
+            margin-bottom: 20px;
+            border-left: 5px solid var(--tirkizna-more);
+            padding-left: 15px;
+        }
+        .upotreba-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 25px;
+        }
+        .upotreba-stavka h3 {
+            font-size: 20px;
+            color: var(--tirkizna-tamna);
+            margin-bottom: 10px;
+        }
+        .upotreba-stavka p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        /* --- 360 STEPENI PRIKAZ --- */
+        .sekcija-360 {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 60px;
+        }
+        .viewer-360-kontejner {
+            width: 100%;
+            max-width: 450px;
+            height: 450px;
+            margin: 30px auto 15px auto;
+            border: 2px dashed var(--tirkizna-more);
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: grab;
+            position: relative;
+            user-select: none;
+            border-radius: 8px;
+        }
+        .viewer-360-kontejner img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+            pointer-events: none;
+        }
+        .viewer-360-kontejner:active {
+            cursor: grabbing;
+        }
+        .uputstvo-360 {
+            font-size: 14px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        /* DIZAJN PLATNA */
+        .dizajner-sekcija {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin: 40px 0 60px 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .dizajner-vizuelno {
+            flex: 1;
+            min-width: 280px;
+            max-width: 450px;
+            height: 350px;
+            background-image: url('https://i.postimg.cc/VspZSghz/Gemini-Generated-Image-drongsdrongsdron.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: filter 0.5s ease;
+        }
+
+        .dizajner-kontrole {
+            flex: 1;
+            min-width: 280px;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .dizajner-kontrole h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: var(--boja-teksta);
+        }
+
+        .dizajner-kontrole p {
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .paleta-boja {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .boja-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 8px rgba(0,0,0,0.2);
+            cursor: pointer;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .boja-btn:hover, .boja-btn.aktivna-boja {
+            transform: scale(1.15);
+            border-color: var(--boja-teksta);
+        }
+
+        /* --- RADOVI IZ GARAŽE --- */
+        .garaza-sekcija {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 60px;
+            text-align: left;
+        }
+        .garaza-sekcija h2 {
+            font-size: 28px;
+            color: var(--boja-teksta);
+            margin-bottom: 15px;
+        }
+        .mreza-galerije {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+        .mreza-galerije img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            transition: transform 0.3s;
+        }
+        .mreza-galerije img:hover {
+            transform: scale(1.03);
+        }
+
+        /* --- MULTIMEDIJA --- */
+        .video-sekcija {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 60px;
+        }
+        .video-kontejner {
+            position: relative;
+            padding-bottom: 56.25%; 
+            height: 0;
+            overflow: hidden;
+            max-width: 800px;
+            margin: 25px auto 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            background: #000;
+        }
+        .video-kontejner video, .video-kontejner iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .brend-slogan {
+            font-size: 36px;
+            font-weight: 900;
+            color: var(--drvo-braon);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 50px 0;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            padding: 0 10px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+
+        /* Responsivnost za mobilne uređaje */
+        @media (max-width: 900px) {
+            .hero-tekst {
+                max-width: 90%;
+                margin: 0 auto;
+                padding: 25px 20px;
+                white-space: normal;
+            }
+            .hero-tekst h1 {
+                font-size: 24px;
+            }
+            .provokacija {
+                font-size: 28px;
+            }
+            .odgovor {
+                font-size: 32px;
+            }
+            .brend-slogan {
+                font-size: 24px;
+            }
+            nav ul {
+                display: none; /* Može se proširiti po potrebi za mobilni meni */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-kontejner">
+            <a href="#" class="logo">
+                e-stolice.rs
+                <span class="brend-podnaslov">by SteNa La Pizu</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="aktivno">Početna</a></li>
+                    <li><a href="#prikaz-360">360° Model</a></li>
+                    <li><a href="#upotreba">Namena</a></li>
+                    <li><a href="#garaza">Izrada</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero-frejm">
+        <div class="slajd aktivno-slajd" id="faza-pitanje">
+            <div class="centriran-sadrzaj">
+                <div class="provokacija">Imate problem sa stolicom?!</div>
+            </div>
+        </div>
+        <div class="slajd" id="faza-odgovor">
+            <div class="centriran-sadrzaj">
+                <div class="odgovor">PROBAJTE NAŠE NA e-stolice.rs!</div>
+            </div>
+        </div>
+        <div class="slajd" id="faza-prazna-stolica" style="background-image: url('https://i.postimg.cc/J7XCKVq9/Gemini-Generated-Image-drongsdrongsdron.png'); background-size: 35%; background-repeat: no-repeat; background-position: 85% center;">
+            <div class="hero-tekst">
+                <h1>SteNa La Pizu - Zavali se i uživaj...</h1>
+                <p>Vrhunske drvene stolice stvorene za potpuno opuštanje na pesku ili u šumi.</p>
+                <a href="#prikaz-360" class="btn">Izaberi svoju stolicu</a>
+            </div>
+        </div>
+        <div class="slajd" id="faza-devojka-odmor" style="background-color: #92cbd7; background-image: url('https://i.postimg.cc/d3GM0r31/Gemini-Generated-Image-hh7vtehh7vtehh7v.png'); background-size: contain; background-repeat: no-repeat; background-position: right center;">
+            <div class="hero-tekst">
+                <h1>Originalni domaći dizajn</h1>
+                <p>Nisko sedište, vrhunsko bukovo drvo i stabilnost na pesku bez prevrtanja.</p>
+                <a href="#prikaz-360" class="btn">Saznaj više</a>
+            </div>
+        </div>
+        <div class="slajd" id="faza-suma" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=1470&auto=format&fit=cover');">
+            <div class="hero-tekst">
+                <h1>Bez brige uz naš besplatan servis</h1>
+                <p>Kvalitet bez kompromisa. Dobijate potpuno besplatno servisiranje u godini kupovine i celoj narednoj godini!</p>
+                <a href="#kontakt" class="btn">Pogledaj uslove servisa</a>
+            </div>
+        </div>
+    </div>
+
+    <main class="glavni-sadrzaj">
+        <section class="dobrodoslica">
+            <h2>Stvorena za pesak, sunce i šum talasa</h2>
+            <p>Bilo da hvatate hlad pod krošnjama na novosadskom Štrandu ili upijate sunce na tirkiznim plažama Makarske, naša stolica je vaš najbolji letnji saputnik. Nisko sedište daje vam osećaj da ste jedno sa prirodom, a njena stabilnost na pesku garantuje udobnost bez kompromisa.</p>
+        </section>
+
+        <section class="mreza-kartica">
+            <div class="kartica" style="border-top: 5px solid var(--tirkizna-more);">
+                <h3>Anatomski i Medicinski kutak</h3>
+                <p><strong>Čuva leđa i kukove!</strong> Ergonomski oblikovana da rastereti kičmu. Pošto je niska, ima i specijalnu bezbednosnu funkciju za penzionere: ako i padnete sa nje, udarac je minimalan, a kukovi ostaju stopostotno bezbedni!</p>
+            </div>
+            <div class="kartica" style="border-top: 5px solid var(--prolecna-zelena);">
+                <h3>Weekend & Party Mod</h3>
+                <p><strong>"Samo se prevrneš" opcija!</strong> Idealna za žurke i momente kada se malo više popije pored roštilja. Stolica je toliko blizu zemlje da nema opasnog pada – ako vas prevari piće, samo se lagano prevrnete na travu.</p>
+            </div>
+            <div class="kartica" style="border-top: 5px solid var(--sunce-zuta);">
+                <h3>Servisni Konzilijum</h3>
+                <p><strong>Besplatno lečenje svake stolice!</strong> Ako se vaša stolica ipak "pokvari" od previše uživanja ili preteških gostiju – servis je besplatan u godini kupovine i celoj narednoj.</p>
+            </div>
+        </section>
+
+        <section class="sekcija-360" id="prikaz-360">
+            <h2>Pregled modela u 360 stepeni</h2>
+            <p>Kliknite na stolicu ispod i povucite miš levo-desno (ili prevucite prstom na ekranu mobilnog) da biste je detaljno sagledali sa svih strana.</p>
+            <div class="viewer-360-kontejner" id="interactive-360-viewer">
+                <img id="image-360-active" src="https://i.postimg.cc/J7XCKVq9/Gemini-Generated-Image-drongsdrongsdron.png" alt="Drvena sklopiva stolica e-stolice.rs 360 prikaz">
+                <div class="uputstvo-360" style="position: absolute; bottom: 12px;">← Povucite za rotiranje u krug →</div>
+            </div>
+        </section>
+
+        <section class="upotreba-sekcija" id="upotreba">
+            <h2>Gde se sve koristi naša stolica?</h2>
+            <p style="color: #666; margin-bottom: 10px;">Dizajnirana je za situacije u kojima vam je potreban brz zaklon, stabilnost i maksimalna udobnost na otvorenom terenu.</p>
+            <div class="upotreba-grid">
+                <div class="upotreba-stavka">
+                    <h3>⚽ Fudbalske utakmice i sportski vikendi</h3>
+                    <p>Idete na lokalni, seoski teren da gledate decu od desetak godina kako igraju fudbal sa roditeljima? Dok drugi stoje na nogama ili sede na hladnoj zemlji, vi rasklopite svoju stolicu, uvalite se pored aut-linije i uživajte u utakmici sa pogledom na brežuljke u pozadini.</p>
+                </div>
+                <div class="upotreba-stavka">
+                    <h3>🏢 Druženje ispred zgrade u kvartu</h3>
+                    <p>Za one letnje večeri kada se ekipa okupi u dvorištu ili ispred ulaza u kvartu. Stolica se sklapa za sekundu, laka je za nošenje pod rukom niz stepenice, a nisko sedište vas savršeno pozicionira za opušten razgovor, hladno piće i uživanje u komšijskim pričama.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="dizajner-sekcija">
+            <div class="dizajner-vizuelno" id="stolica-prikaz"></div>
+            <div class="dizajner-kontrole">
+                <h3>Izaberi svoj letnji dezen</h3>
+                <p>Klikni na željenu boju ispod i pogledaj kako tvoja drvena bukova stolica menja platno u realnom vremenu:</p>
+                <div class="paleta-boja">
+                    <div class="boja-btn aktivna-boja" style="background-color: #6d8c6b;" onclick="promeniPlatno('zelena', this)" title="Štrand Zelena"></div>
+                    <div class="boja-btn" style="background-color: #2980b9;" onclick="promeniPlatno('plava', this)" title="Makarska Plava"></div>
+                    <div class="boja-btn" style="background: linear-gradient(45deg, #3498db 50%, #ffffff 50%);" onclick="promeniPlatno('prugasta', this)" title="Morska Prugasta"></div>
+                    <div class="boja-btn" style="background-color: #e67e22;" onclick="promeniPlatno('narandzasta', this)" title="Zalazak Narandžasta"></div>
+                </div>
+                <h4 id="naziv-dezena" style="color: var(--tirkizna-tamna); font-weight: 700;">Dezen: Štrand Zelena (Original)</h4>
+            </div>
+        </section>
+
+        <section class="garaza-sekcija" id="garaza">
+            <h2>Domaća radionica: Radovi iz garaže</h2>
+            <p style="color: #666;">Svaka naša stolica prolazi kroz proces preciznog sečenja, brušenja i sklapanja direktno u porodičnoj garaži. Ručni rad, domaće bukovo drvo i pažnja posvećena svakom šrafu.</p>
+            <div class="mreza-galerije">
+                <img src="https://images.unsplash.com/photo-1534224039826-c7a0dea0e66a?q=80&w=500&auto=format&fit=cover" alt="Ručna izrada drvenih stolica - Sečenje drveta">
+                <img src="https://images.unsplash.com/photo-1540200049848-d9813ea0e1b9?q=80&w=500&auto=format&fit=cover" alt="Izrada konstrukcije stolica u radionici">
+                <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=500&auto=format&fit=cover" alt="Detalji završne obrade drveta">
+                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=500&auto=format&fit=cover" alt="Spreman proizvod iz radionice SteNa La Pizu">
+            </div>
+        </section>
+
+        <section class="video-sekcija" id="kontakt">
+            <h2>Kako su deca pomagala pri sklapanju</h2>
+            <p style="color: #666;">Naš mali porodični projekat! Pogledajte kratki 15-sekundni video ili slajdove iz procesa sklapanja stolica u kojima su deca imala glavnu ulogu u sklapanju.</p>
+            <div class="video-kontejner">
+                <video controls poster="https://i.postimg.cc/J7XCKVq9/Gemini-Generated-Image-drongsdrongsdron.png">
+                    <source src="LINK_TVOG_VIDEA_OD_15_SEKUNDI.mp4" type="video/mp4">
+                    Vaš pretraživač ne podržava video prikaz.
+                </video>
+            </div>
+        </section>
+
+        <div class="brend-slogan">
+            e-stolice.rs - SteNa La Pizu, uvali se.
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 e-stolice.rs | Brend: SteNa La Pizu. Sva prava zadržana.</p>
+    </footer>
+
+    <script>
+        const slajdovi = document.querySelectorAll('.slajd');
+        let trenutniSlajd = 0;
+        setTimeout(() => {
+            slajdovi[0].classList.remove('aktivno-slajd');
+            slajdovi[1].classList.add('aktivno-slajd'); 
+            trenutniSlajd = 1;
+            setTimeout(() => {
+                slajdovi[1].classList.remove('aktivno-slajd');
+                slajdovi[2].classList.add('aktivno-slajd'); 
+                trenutniSlajd = 2;
+                setInterval(() => {
+                    slajdovi[trenutniSlajd].classList.remove('aktivno-slajd');
+                    if (trenutniSlajd === 4) { trenutniSlajd = 2; }
+                    else { trenutniSlajd++; }
+                    slajdovi[trenutniSlajd].classList.add('aktivno-slajd');
+                }, 6000); 
+            }, 3000);
+        }, 3000);
+
+        function promeniPlatno(dezen, element) {
+            const stolica = document.getElementById('stolica-prikaz');
+            const tekst = document.getElementById('naziv-dezena');
+            document.querySelectorAll('.boja-btn').forEach(btn => btn.classList.remove('aktivna-boja'));
+            element.classList.add('aktivna-boja');
+            if (dezen === 'zelena') { stolica.style.filter = "none"; tekst.innerText = "Dezen: Štrand Zelena (Original)"; }
+            else if (dezen === 'plava') { stolica.style.filter = "hue-rotate(140deg) saturate(1.2)"; tekst.innerText = "Dezen: Makarska Plava"; }
+            else if (dezen === 'prugasta') { stolica.style.filter = "hue-rotate(190deg) contrast(1.3)"; tekst.innerText = "Dezen: Morska Prugasta"; }
+            else if (dezen === 'narandzasta') { stolica.style.filter = "hue-rotate(300deg) saturate(1.5)"; tekst.innerText = "Dezen: Zalazak Narandžasta"; }
+        }
+
+        const slikeZa360 = [
+            "https://i.postimg.cc/J7XCKVq9/Gemini-Generated-Image-drongsdrongsdron.png",
+            "https://i.postimg.cc/J7XCKVq9/Gemini-Generated-Image-drongsdrongsdron.png",
+            "https://i.postimg.cc/J7XCKVq9/Gemini-Generated-Image-drongsdrongsdron.png",
+            "https://i.postimg.cc/J7XCKVq9/Gemini-Generated-Image-drongsdrongsdron.png"
+        ];
+        const kontejner360 = document.getElementById('interactive-360-viewer');
+        const slika360Aktivna = document.getElementById('image-360-active');
+        let dragging360 = false;
+        let startX360 = 0;
+        let indeksSlike360 = 0;
+        const ukupanBrojSlika360 = slikeZa360.length;
+
+        slikeZa360.forEach(url => { const i = new Image(); i.src = url; });
+        kontejner360.addEventListener('mousedown', (e) => { dragging360 = true; startX360 = e.clientX; });
+        window.addEventListener('mouseup', () => { dragging360 = false; });
+        window.addEventListener('mousemove', (e) => {
+            if (!dragging360) return;
+            const trenutniX = e.clientX;
+            const razlika = startX360 - trenutniX;
+            if (Math.abs(razlika) > 20) {
+                if (razlika > 0) { indeksSlike360 = (indeksSlike360 + 1) % ukupanBrojSkila360 || (indeksSlike360 + 1) % ukupanBrojSlika360; }
+                else { indeksSlike360 = (indeksSlike360 - 1 + ukupanBrojSlika360) % ukupanBrojSlika360; }
+                slika360Aktivna.src = slikeZa360[indeksSlike360];
+                startX360 = trenutniX;
+            }
+        });
+        kontejner360.addEventListener('touchstart', (e) => { dragging360 = true; startX360 = e.touches[0].clientX; });
+        window.addEventListener('touchend', () => { dragging360 = false; });
+        kontejner360.addEventListener('touchmove', (e) => {
+            if (!dragging360) return;
+            const trenutniX = e.touches[0].clientX;
+            const razlika = startX360 - trenutniX;
+            if (Math.abs(razlika) > 20) {
+                if (razlika > 0) { indeksSlike360 = (indeksSlike360 + 1) % ukupanBrojSlika360; }
+                else { indeksSlike360 = (indeksSlike360 - 1 + ukupanBrojSlika360) % ukupanBrojSlika360; }
+                slika360Aktivna.src = slikeZa360[indeksSlike360];
+                startX360 = trenutniX;
+            }
+        });
+    </script>
+</body>
+</html>
