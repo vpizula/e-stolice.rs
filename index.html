@@ -61,6 +61,13 @@
     </script>
 
     <style>
+            .gornji-pecat {
+            position: fixed; /* Ostaće tu zakucano i kad posetilac skroluje stranicu nadole */
+            top: 15px;
+            left: 15px;
+            width: 90px; /* Prilagodi dimenzije po želji */
+            z-index: 9999; /* Osigurava da je uvek preko ostalih elemenata */
+        }
         :root {
             --boja-peska: #f9f6f0;
             --boja-teksta: #2c3e50;
@@ -533,7 +540,7 @@
     </style>
 </head>
 <body>
-
+    <img src="pecat.png" alt="Pečat" class="gornji-pecat">
     <header>
         <div class="nav-kontejner">
             <a href="#" class="logo">
