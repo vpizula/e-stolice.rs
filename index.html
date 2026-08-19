@@ -61,6 +61,52 @@
     </script>
 
     <style>
+
+        /* DODAJ OVO U SVOJ CSS */
+.nav-kontejner {
+    display: flex;
+    justify-content: space-between; /* Razmesta pečat/logo levo, a meni desno */
+    align-items: center; /* Centrira sve po visini */
+    position: relative; /* Potrebno zbog apsolutnog pozicioniranja pečata ako treba */
+    padding: 15px 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column; /* Ređa naslov i podnaslov jedno ispod drugog */
+    align-items: center; /* Centrira naslov i podnaslov po sredini bloka */
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center; /* Osigurava da je tekst centriran unutar bloka */
+}
+
+.brend-podnaslov {
+    font-size: 14px;
+    font-weight: normal;
+    color: #666;
+    margin-top: 2px;
+}
+
+.gornji-pecat {
+    /* Važno: Ovde definišeš veličinu, a ne u HTML-u */
+    width: 80px; 
+    height: auto;
+    
+    /* Pozicioniranje: Fiksira ga u gornji levi ugao EKRANA */
+    position: fixed; 
+    top: 10px;
+    left: 10px;
+    
+    /* Z-index da bude iznad svega */
+    z-index: 9999; 
+    
+    /* VAŽNO: Ovo je tvoj providni .png fajl! */
+    background: transparent; 
+}
             .gornji-pecat {
             position: fixed; /* Ostaće tu zakucano i kad posetilac skroluje stranicu nadole */
             top: 15px;
@@ -541,19 +587,26 @@
 </head>
 <body>
     <img src="pecat.jpg" alt="Pečat" class="gornji-pecat">
-<header>
+header>
     <div class="nav-kontejner">
+        <!-- LOGO I PODNASLOV -->
         <a href="#" class="logo">
             Sklopive stolice
             <span class="brend-podnaslov">by SteNa La-Pizu</span>
         </a>
+        
+        <!-- DODATI PEČAT (Sada je unutar kontejnera) -->
+        <!-- Obavezno stavi .png umesto .jpg i providnu pozadinu na samoj slici! -->
+        <img src="pecat.png" alt="Pečat" class="gornji-pecat">
+
+        <!-- NAVIGACIJA -->
         <nav>
             <ul>
-                    <li><a href="#" class="aktivno">Početna</a></li>
-                    <li><a href="#prikaz-360">360° Model</a></li>
-                    <li><a href="#upotreba">Namena</a></li>
-                    <li><a href="#garaza">Izrada</a></li>
-                    <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#" class="aktivno">Početna</a></li>
+                <li><a href="#prikaz-360">360° Model</a></li>
+                <li><a href="#upotreba">Namena</a></li>
+                <li><a href="#garaza">Izrada</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
             </ul>
         </nav>
     </div>
