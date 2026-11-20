@@ -67,6 +67,16 @@
         }
         taster.classList.add("aktivna-boja");
         taster.setAttribute("aria-pressed", "true");
+        var dezenSelect = document.getElementById("dezen");
+        if (dezenSelect) {
+            var ime = (taster.getAttribute("data-naziv") || "").replace(/^Dezen:\s*/, "");
+            for (var j = 0; j < dezenSelect.options.length; j++) {
+                if (dezenSelect.options[j].value === ime) {
+                    dezenSelect.selectedIndex = j;
+                    break;
+                }
+            }
+        }
     });
 
     function ostatak(broj, delilac) {
@@ -139,16 +149,4 @@
             pokreni360(ugradjeno);
         });
 
-    var video = document.getElementById("video-sklapanje");
-    if (video) {
-        fetch("assets/video/sklapanje.mp4", { method: "HEAD" })
-            .then(function (odgovor) {
-                if (!odgovor.ok) return;
-                var tip = odgovor.headers.get("content-type") || "";
-                if (tip.indexOf("video/") !== 0 && tip.indexOf("application/mp4") === -1) return;
-                video.src = "assets/video/sklapanje.mp4";
-                video.hidden = false;
-            })
-            .catch(function () {});
-    }
 }());

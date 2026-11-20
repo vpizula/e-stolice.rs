@@ -202,10 +202,14 @@ section[id] {
     inset: 0;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.8s ease;
+}
+
+.slajd.sa-slikom {
+    justify-content: flex-start;
 }
 
 .slajd.aktivno-slajd {
@@ -320,8 +324,11 @@ section[id] {
 .sekcija-360 h2,
 .upotreba-sekcija h2,
 .dizajner-kontrole h2,
+.galerija-sekcija h2,
 .garaza-sekcija h2,
+.sklapanje-sekcija h2,
 .video-sekcija h2,
+.poruci-sekcija h2,
 .pitanja h2 {
     margin: 0 0 12px;
     font-size: clamp(1.6rem, 3vw, 2.1rem);
@@ -367,8 +374,11 @@ section[id] {
 .sekcija-360,
 .upotreba-sekcija,
 .dizajner-sekcija,
+.galerija-sekcija,
 .garaza-sekcija,
+.sklapanje-sekcija,
 .video-sekcija,
+.poruci-sekcija,
 .pitanja {
     background: var(--boja-papira);
     border-radius: 18px;
@@ -435,8 +445,11 @@ section[id] {
 
 .dizajner-vizuelno img {
     background: var(--boja-peska);
+    width: 100%;
     max-height: 560px;
-    object-fit: contain;
+    aspect-ratio: 5 / 4;
+    object-fit: cover;
+    border-radius: 16px;
 }
 
 .paleta-boja {
@@ -478,10 +491,138 @@ section[id] {
     padding: 0;
 }
 
+.mreza-galerija-velika {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.mreza-galerija-velika img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    width: 100%;
+}
+
+.sklapanje-mreza {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.sklop-demo {
+    background: var(--boja-peska);
+    border-radius: 16px;
+    padding: 16px;
+    text-align: center;
+}
+
+.sklop-svg {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    display: block;
+    margin: 0 auto 14px;
+}
+
+.sklop-tlo {
+    fill: rgba(36, 52, 60, 0.12);
+}
+
+.deo-naslon,
+.deo-sediste {
+    transform-box: fill-box;
+    transform-origin: center;
+    transition: transform 0.7s ease;
+}
+
+.sklop-demo[data-stanje="otvoreno"] .deo-naslon {
+    transform: rotate(-28deg) translate(-18px, -6px);
+}
+
+.sklop-demo[data-stanje="otvoreno"] .deo-sediste {
+    transform: rotate(18deg) translate(10px, 8px);
+}
+
+.sklop-demo[data-stanje="sklopljeno"] .deo-naslon {
+    transform: rotate(0deg) translate(0, 0);
+}
+
+.sklop-demo[data-stanje="sklopljeno"] .deo-sediste {
+    transform: rotate(0deg) translate(0, -36px);
+}
+
+.sklop-video-omot video {
+    width: 100%;
+    border-radius: 14px;
+    background: #111;
+    display: block;
+}
+
 .mreza-galerije figcaption {
     margin-top: 6px;
     color: #5d6b73;
     font-size: 0.92rem;
+}
+
+.forma-porudzbine {
+    max-width: 720px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.forma-mreza {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.forma-red {
+    margin-bottom: 14px;
+}
+
+.forma-red label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.forma-red input,
+.forma-red select,
+.forma-red textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid rgba(36, 52, 60, 0.18);
+    border-radius: 12px;
+    background: #fff;
+    color: var(--boja-teksta);
+    font: inherit;
+}
+
+.forma-akcije {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.btn-whatsapp {
+    background: #25d366;
+    color: #08332c;
+}
+
+.btn-whatsapp:hover,
+.btn-whatsapp:focus-visible {
+    background: #6ef0a0;
+}
+
+.forma-napomena {
+    margin: 14px 0 0;
+    color: #5d6b73;
+    font-size: 0.9rem;
+}
+
+.forma-napomena code {
+    font-size: 0.85em;
 }
 
 .video-sekcija video {
@@ -533,6 +674,10 @@ footer p {
     margin: 4px 0;
 }
 
+footer a {
+    color: #9ef0df;
+}
+
 @media (max-width: 920px) {
     :root { --header-h: 76px; }
 
@@ -572,8 +717,16 @@ footer p {
     .mreza-kartica,
     .upotreba-grid,
     .dizajner-sekcija,
-    .mreza-galerije {
+    .mreza-galerije,
+    .mreza-galerija-velika,
+    .sklapanje-mreza,
+    .forma-mreza,
+    .porodica-mreza {
         grid-template-columns: 1fr;
+    }
+
+    .mreza-galerija-velika {
+        grid-template-columns: 1fr 1fr;
     }
 
     .hero-frejm {
@@ -600,4 +753,6 @@ footer p {
     html { scroll-behavior: auto; }
     .slajd { transition: none; opacity: 0 !important; visibility: hidden; }
     .slajd.uvod-glavni { opacity: 1 !important; visibility: visible; }
+    .deo-naslon,
+    .deo-sediste { transition: none; }
 }

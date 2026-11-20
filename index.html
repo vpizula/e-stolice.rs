@@ -32,6 +32,7 @@
           "url": "https://www.e-stolice.rs/",
           "logo": "https://www.e-stolice.rs/assets/images/pecat.png",
           "image": "https://www.e-stolice.rs/assets/images/og.jpg",
+          "email": "v_pizula@yahoo.com",
           "description": "Domaća radionica sklopivih La-Pižu stolica od bukovog drveta, Novi Sad.",
           "address": {
             "@type": "PostalAddress",
@@ -47,9 +48,10 @@
           "image": [
             "https://www.e-stolice.rs/assets/images/og.jpg",
             "https://www.e-stolice.rs/assets/images/dezeni/zelena.jpg",
-            "https://www.e-stolice.rs/assets/images/dezeni/prugasta.jpg"
+            "https://www.e-stolice.rs/assets/images/dezeni/plava-prugasta.jpg",
+            "https://www.e-stolice.rs/assets/images/dezeni/narandzasta.jpg"
           ],
-          "description": "Sklopiva stolica od domaće bukovine sa niskim sedištem. Stabilna je na pesku, sklapa se i nosi pod rukom. Platna: Štrand Zelena, Makarska Plava, Morska Prugasta i Zalazak Narandžasta. Servis je besplatan u godini kupovine i u celoj narednoj godini.",
+          "description": "Sklopiva stolica od domaće bukovine sa niskim sedištem. Stabilna je na pesku, sklapa se i nosi pod rukom. Pet pravih dezena platna: Štrand Zelena, Maslinasta Šatorska, Zelena Prugasta, Plava Prugasta i Narandžasta Prugasta. Servis je besplatan u godini kupovine i u celoj narednoj godini.",
           "material": "Bukovo drvo i platno",
           "category": "Sklopiva stolica",
           "countryOfOrigin": "RS"
@@ -86,7 +88,7 @@
               "name": "Koji dezeni platna postoje?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Štrand Zelena, Makarska Plava, Morska Prugasta i Zalazak Narandžasta. Konstrukcija je od domaće bukovine, ručni rad radionice SteNa La-Pizu u Novom Sadu."
+                "text": "Pet dezena: Štrand Zelena, Maslinasta Šatorska, Zelena Prugasta, Plava Prugasta i Narandžasta Prugasta. Konstrukcija je od domaće bukovine, ručni rad radionice SteNa La-Pizu u Novom Sadu."
               }
             },
             {
@@ -124,6 +126,8 @@
                     <li><a href="#upotreba">Namena</a></li>
                     <li><a href="#dezeni">Dezeni</a></li>
                     <li><a href="#garaza">Izrada</a></li>
+                    <li><a href="#galerija">Galerija</a></li>
+                    <li><a href="#poruci">Poruči</a></li>
                     <li><a href="#kontakt">Kontakt</a></li>
                 </ul>
             </nav>
@@ -190,11 +194,11 @@
 
             <section class="sekcija-360" id="prikaz-360" aria-labelledby="naslov-360">
                 <h2 id="naslov-360">Pregled modela u 360 stepeni</h2>
-                <p class="uvod-pasus">Povuci stolicu mišem ili prstom. Niz ide redom: 01.jpg, 02.jpg, 03… iste stolice, u krug.</p>
+                <p class="uvod-pasus">Povuci mišem ili prstom levo–desno i okreni La-Pižu stolicu u krug.</p>
                 <div class="viewer-360-kontejner" id="interactive-360-viewer">
-                    <img id="image-360-active" src="assets/images/360/01.jpg" alt="La-Pižu stolica, kadar 1" width="885" height="1100" draggable="false">
+                    <img id="image-360-active" src="assets/images/360/01.jpg" alt="La-Pižu stolica, 360° prikaz" width="1000" height="1000" draggable="false">
                 </div>
-                <p class="uputstvo-360" id="uputstvo-360">Jedan kadar stolice. Kad dodaš 01.jpg, 02.jpg i dalje, prevlačenje je vrti u krug.</p>
+                <p class="uputstvo-360" id="uputstvo-360">← Prevuci za rotaciju →</p>
             </section>
 
             <section class="upotreba-sekcija" id="upotreba" aria-labelledby="naslov-upotreba">
@@ -216,19 +220,72 @@
 
             <section class="dizajner-sekcija" id="dezeni" aria-labelledby="naslov-dezeni">
                 <div class="dizajner-vizuelno">
-                    <img id="stolica-prikaz" src="assets/images/dezeni/zelena.jpg" alt="La-Pižu stolica, dezen Štrand Zelena, maslinasto platno uz more" width="911" height="1100">
+                    <img id="stolica-prikaz" src="assets/images/dezeni/zelena.jpg" alt="Pravo platno dezena Štrand Zelena" width="1100" height="900">
                 </div>
                 <div class="dizajner-kontrole">
                     <h2 id="naslov-dezeni">Izaberi svoj letnji dezen</h2>
-                    <p>Klikni boju. Menja se prava fotografija platna, bez digitalnog prebojavanja.</p>
+                    <p>Pet pravih dezena sa stolice. Klikni uzorak — menja se fotografija pravog platna.</p>
                     <div class="paleta-boja" role="group" aria-label="Dezeni platna">
-                        <button type="button" class="boja-btn aktivna-boja" style="background-color:#6d8c6b" aria-pressed="true" aria-label="Štrand Zelena" data-src="assets/images/dezeni/zelena.jpg" data-alt="La-Pižu stolica, dezen Štrand Zelena, maslinasto platno uz more" data-naziv="Dezen: Štrand Zelena"></button>
-                        <button type="button" class="boja-btn" style="background-color:#2980b9" aria-pressed="false" aria-label="Makarska Plava" data-src="assets/images/dezeni/plava.jpg" data-alt="Tamno platno i bukov ram La-Pižu stolice u radionici" data-naziv="Dezen: Makarska Plava. Na slici je pravo tamno platno iz radionice, bez digitalnog prebojavanja."></button>
-                        <button type="button" class="boja-btn" style="background:linear-gradient(45deg,#3498db 50%,#ffffff 50%)" aria-pressed="false" aria-label="Morska Prugasta" data-src="assets/images/dezeni/prugasta.jpg" data-alt="La-Pižu stolica sa morskim prugastim platnom na travi" data-naziv="Dezen: Morska Prugasta"></button>
-                        <button type="button" class="boja-btn" style="background-color:#e67e22" aria-pressed="false" aria-label="Zalazak Narandžasta" data-src="assets/images/dezeni/narandzasta.jpg" data-alt="Krupan kadar narandžasto-belog prugastog platna i bukovog rama" data-naziv="Dezen: Zalazak Narandžasta"></button>
+                        <button type="button" class="boja-btn aktivna-boja" style="background-color:#8a9a6e" aria-pressed="true" aria-label="Štrand Zelena" data-src="assets/images/dezeni/zelena.jpg" data-alt="Pravo platno dezena Štrand Zelena" data-naziv="Dezen: Štrand Zelena"></button>
+                        <button type="button" class="boja-btn" style="background-color:#4f5d3a" aria-pressed="false" aria-label="Maslinasta Šatorska" data-src="assets/images/dezeni/maslinasta.jpg" data-alt="Pravo šatorsko platno, maslinasta" data-naziv="Dezen: Maslinasta Šatorska"></button>
+                        <button type="button" class="boja-btn" style="background:linear-gradient(90deg,#5f8f6a 20%,#2a9d8f 40%,#3d3d3d 60%,#cbb894 80%)" aria-pressed="false" aria-label="Zelena Prugasta" data-src="assets/images/dezeni/zelena-prugasta.jpg" data-alt="Pravo zeleno-prugasto platno" data-naziv="Dezen: Zelena Prugasta"></button>
+                        <button type="button" class="boja-btn" style="background:linear-gradient(90deg,#1abc9c 25%,#1a5276 50%,#ecf0f1 75%)" aria-pressed="false" aria-label="Plava Prugasta" data-src="assets/images/dezeni/plava-prugasta.jpg" data-alt="Pravo plavo-prugasto platno" data-naziv="Dezen: Plava Prugasta"></button>
+                        <button type="button" class="boja-btn" style="background:linear-gradient(90deg,#e67e22 30%,#f5f0e6 55%,#8b4513 80%)" aria-pressed="false" aria-label="Narandžasta Prugasta" data-src="assets/images/dezeni/narandzasta.jpg" data-alt="Pravo narandžasto-prugasto platno" data-naziv="Dezen: Narandžasta Prugasta"></button>
                     </div>
                     <h3 id="naziv-dezena">Dezen: Štrand Zelena</h3>
                 </div>
+            </section>
+
+            <section class="galerija-sekcija" id="galerija" aria-labelledby="naslov-galerija">
+                <h2 id="naslov-galerija">Galerija</h2>
+                <p class="uvod-pasus">Trava, teren, more, radionica, detalji i porodični trenuci — što više kadrova, to jasnija stolica.</p>
+                <ul class="mreza-galerije mreza-galerija-velika">
+                    <li><figure><img src="assets/images/galerija/01-trava.jpg" alt="Tri La-Pižu stolice na travi" loading="lazy"><figcaption>Druženje na travi</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/02-trojka.jpg" alt="Tri stolice, različita platna" loading="lazy"><figcaption>Tri dezena</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/09-trava.jpg" alt="Stolice na travi u suncu" loading="lazy"><figcaption>Letnje sunce</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/10-trava.jpg" alt="La-Pižu stolice na zelenoj travi" loading="lazy"><figcaption>Na travi</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/11-trava.jpg" alt="Stolice u krugu na travi" loading="lazy"><figcaption>U krugu</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/12-trava.jpg" alt="Stolice spremne za druženje" loading="lazy"><figcaption>Spremne za ekipu</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/03-teren.jpg" alt="Stolica pored terena" loading="lazy"><figcaption>Pored aut-linije</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/04-teren-blizi.jpg" alt="Stolica na travi terena" loading="lazy"><figcaption>Sportski vikend</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/13-teren.jpg" alt="Stolica na fudbalskom terenu" loading="lazy"><figcaption>Na terenu</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/14-teren.jpg" alt="La-Pižu stolica uz teren" loading="lazy"><figcaption>Uz teren</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/07-more.jpg" alt="Stolica uz more" loading="lazy"><figcaption>More</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/15-more.jpg" alt="La-Pižu stolica na obali" loading="lazy"><figcaption>Obala</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/16-more.jpg" alt="Stolica i tirkizno more" loading="lazy"><figcaption>Tirkiz</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/17-more.jpg" alt="Stolica na šljunku uz more" loading="lazy"><figcaption>Šljunak</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/18-more.jpg" alt="Stolica uz talase" loading="lazy"><figcaption>Šum talasa</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/08-zalazak.jpg" alt="Stolica u zalasku" loading="lazy"><figcaption>Zalazak</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/19-zalazak.jpg" alt="Silueta stolice u zalasku" loading="lazy"><figcaption>Silueta</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/20-zalazak.jpg" alt="Stolica pred zalaskom" loading="lazy"><figcaption>Pred mrak</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/05-porodica.jpg" alt="Porodični momenat uz stolice" loading="lazy"><figcaption>Porodica</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/21-porodica.jpg" alt="Porodični kadar sa stolicama" loading="lazy"><figcaption>Zajedno</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/22-porodica.jpg" alt="Trenutak uz La-Pižu" loading="lazy"><figcaption>Trenutak</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/23-sklop.jpg" alt="Nošenje sklopljene stolice" loading="lazy"><figcaption>Laka za nošenje</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/24-sklop.jpg" alt="Sklopljena stolica u ruci" loading="lazy"><figcaption>Pod rukom</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/36-sklopljene.jpg" alt="Sklopljene stolice spremne za put" loading="lazy"><figcaption>Sklopljene</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/25-radionica.jpg" alt="Radovi u radionici" loading="lazy"><figcaption>Radionica</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/26-radionica.jpg" alt="Bukov ram u izradi" loading="lazy"><figcaption>Ram</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/27-radionica.jpg" alt="Stezanje rama" loading="lazy"><figcaption>Stega</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/28-radionica.jpg" alt="Detalj izrade" loading="lazy"><figcaption>Detalj izrade</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/29-radionica.jpg" alt="Merenje spoja" loading="lazy"><figcaption>Mera</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/30-radionica.jpg" alt="Letvice sedišta" loading="lazy"><figcaption>Letvice</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/31-radionica.jpg" alt="Brušenje i sklapanje" loading="lazy"><figcaption>Brušenje</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/32-radionica.jpg" alt="Završni radovi" loading="lazy"><figcaption>Završnica</figcaption></figure></li>
+                    <li><figure><img src="assets/images/dezeni/zelena.jpg" alt="Dezen Štrand Zelena" loading="lazy"><figcaption>Štrand Zelena</figcaption></figure></li>
+                    <li><figure><img src="assets/images/dezeni/maslinasta.jpg" alt="Dezen Maslinasta Šatorska" loading="lazy"><figcaption>Maslinasta Šatorska</figcaption></figure></li>
+                    <li><figure><img src="assets/images/dezeni/zelena-prugasta.jpg" alt="Dezen Zelena Prugasta" loading="lazy"><figcaption>Zelena Prugasta</figcaption></figure></li>
+                    <li><figure><img src="assets/images/dezeni/plava-prugasta.jpg" alt="Dezen Plava Prugasta" loading="lazy"><figcaption>Plava Prugasta</figcaption></figure></li>
+                    <li><figure><img src="assets/images/dezeni/narandzasta.jpg" alt="Dezen Narandžasta Prugasta" loading="lazy"><figcaption>Narandžasta Prugasta</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/33-prugasta.jpg" alt="Morsko prugasto platno na stoliici" loading="lazy"><figcaption>Prugasto na stolici</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/34-detalj.jpg" alt="Detalj drveta i platna" loading="lazy"><figcaption>Drvo i platno</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/35-detalj.jpg" alt="Krupan kadar stolice" loading="lazy"><figcaption>Krupan kadar</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/37-veče.jpg" alt="Stolica uveče" loading="lazy"><figcaption>Veče</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/38-veče.jpg" alt="Ambijent uveče" loading="lazy"><figcaption>Noćni ambijent</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/39-ambient.jpg" alt="Ambijentalni kadar stolice" loading="lazy"><figcaption>Ambijent</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/40-ambient.jpg" alt="Još jedan ambijentalni kadar" loading="lazy"><figcaption>U prirodi</figcaption></figure></li>
+                    <li><figure><img src="assets/images/galerija/06-sklopljene.jpg" alt="Paket sklopljenih stolica" loading="lazy"><figcaption>Spreman paket</figcaption></figure></li>
+                </ul>
             </section>
 
             <section class="garaza-sekcija" id="garaza" aria-labelledby="naslov-garaza">
@@ -263,13 +320,57 @@
             </section>
 
             <section class="video-sekcija" id="kontakt" aria-labelledby="naslov-kontakt">
-                <h2 id="naslov-kontakt">Kako su deca pomagala pri sklapanju</h2>
-                <p class="uvod-pasus">Mali porodični projekat. Deca su bila uz sklapanje, a svaki ram je prošao kroz iste ruke, stegu i meru. Kratki video može da stane ovde čim fajl <span>assets/video/sklapanje.mp4</span> bude u folderu.</p>
+                <h2 id="naslov-kontakt">Porodični momenat</h2>
+                <p class="uvod-pasus">Mali porodični projekat. Deca su bila uz sklapanje, a svaki ram je prošao kroz iste ruke, stegu i meru.</p>
                 <ul class="porodica-mreza">
-                    <li><img src="assets/images/radionica/ram.jpg" alt="Platno i bukov ram La-Pižu stolice na stolu tokom sklapanja" width="1200" height="555" loading="lazy"></li>
-                    <li><img src="assets/images/porodica/zalazak.jpg" alt="La-Pižu stolica na kamenu u zalasku sunca" width="1400" height="788" loading="lazy"></li>
+                    <li><img src="assets/images/galerija/23-sklop.jpg" alt="Nošenje sklopljene La-Pižu stolice" loading="lazy"></li>
+                    <li><img src="assets/images/galerija/05-porodica.jpg" alt="Porodični momenat uz stolice" loading="lazy"></li>
+                    <li><img src="assets/images/radionica/ram.jpg" alt="Platno i bukov ram tokom sklapanja" loading="lazy"></li>
+                    <li><img src="assets/images/porodica/zalazak.jpg" alt="La-Pižu stolica u zalasku sunca" loading="lazy"></li>
                 </ul>
-                <video id="video-sklapanje" hidden controls playsinline preload="none" poster="assets/images/porodica/zalazak.jpg"></video>
+            </section>
+
+            <section class="poruci-sekcija" id="poruci" aria-labelledby="naslov-poruci">
+                <h2 id="naslov-poruci">Poruči stolicu</h2>
+                <p class="uvod-pasus">Ostavi podatke. Porudžbina stiže na <a href="mailto:v_pizula@yahoo.com">v_pizula@yahoo.com</a>.</p>
+                <form class="forma-porudzbine" id="forma-porudzbine" method="POST" action="https://formsubmit.co/v_pizula@yahoo.com">
+                    <input type="hidden" name="_subject" value="Nova porudžbina — e-stolice.rs">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="https://www.e-stolice.rs/#poruci">
+                    <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="sr-samo" aria-hidden="true">
+                    <div class="forma-red">
+                        <label for="ime">Ime i prezime</label>
+                        <input id="ime" name="ime" type="text" required autocomplete="name" maxlength="80">
+                    </div>
+                    <div class="forma-red">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" required autocomplete="email" maxlength="120">
+                    </div>
+                    <div class="forma-mreza">
+                        <div class="forma-red">
+                            <label for="dezen">Dezen</label>
+                            <select id="dezen" name="dezen" required>
+                                <option value="Štrand Zelena">Štrand Zelena</option>
+                                <option value="Maslinasta Šatorska">Maslinasta Šatorska</option>
+                                <option value="Zelena Prugasta">Zelena Prugasta</option>
+                                <option value="Plava Prugasta">Plava Prugasta</option>
+                                <option value="Narandžasta Prugasta">Narandžasta Prugasta</option>
+                            </select>
+                        </div>
+                        <div class="forma-red">
+                            <label for="kolicina">Količina</label>
+                            <input id="kolicina" name="kolicina" type="number" min="1" max="20" value="1" required>
+                        </div>
+                    </div>
+                    <div class="forma-red">
+                        <label for="poruka">Poruka</label>
+                        <textarea id="poruka" name="poruka" rows="4" maxlength="800" placeholder="Grad, rok, napomena…"></textarea>
+                    </div>
+                    <div class="forma-akcije">
+                        <button class="btn" type="submit">Pošalji porudžbinu</button>
+                    </div>
+                </form>
             </section>
 
             <section class="pitanja" id="pitanja" aria-labelledby="naslov-pitanja">
@@ -288,7 +389,7 @@
                 </details>
                 <details>
                     <summary>Koji dezeni platna postoje?</summary>
-                    <p>Štrand Zelena, Makarska Plava, Morska Prugasta i Zalazak Narandžasta. Konstrukcija je od domaće bukovine, ručni rad radionice SteNa La-Pizu u Novom Sadu.</p>
+                    <p>Pet dezena: Štrand Zelena, Maslinasta Šatorska, Zelena Prugasta, Plava Prugasta i Narandžasta Prugasta. Konstrukcija je od domaće bukovine, ručni rad radionice SteNa La-Pizu u Novom Sadu.</p>
                 </details>
                 <details>
                     <summary>Gde se sve koristi?</summary>
@@ -302,11 +403,12 @@
 
     <footer>
         <p>e-stolice.rs · SteNa La-Pizu · domaća radionica, Novi Sad</p>
+        <p><a href="mailto:v_pizula@yahoo.com">v_pizula@yahoo.com</a></p>
         <p>&copy; 2026 e-stolice.rs. Sva prava zadržana.</p>
     </footer>
 
     <script id="frames-360" type="application/json">
-        ["assets/images/360/01.jpg"]
+        ["assets/images/360/01.jpg","assets/images/360/02.jpg","assets/images/360/03.jpg","assets/images/360/04.jpg","assets/images/360/05.jpg","assets/images/360/06.jpg","assets/images/360/07.jpg","assets/images/360/08.jpg"]
     </script>
     <script src="assets/js/sajt.js"></script>
 </body>
