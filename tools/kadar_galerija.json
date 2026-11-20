@@ -1,0 +1,81 @@
+[
+  {
+    "ulaz": "slike/20260624_182451.jpg",
+    "izlaz": "assets/images/galerija/01-trava.jpg",
+    "sirina": 1400,
+    "kvalitet": 78,
+    "seckanje": [0.0, 0.1, 1.0, 0.95],
+    "boja": 1.06,
+    "kontrast": 1.05,
+    "fotograf_trava": 1.15,
+    "meki_daleki_plan": 0.38
+  },
+  {
+    "ulaz": "slike/20260624_182457.jpg",
+    "izlaz": "assets/images/galerija/02-trojka.jpg",
+    "sirina": 1400,
+    "kvalitet": 78,
+    "seckanje": [0.0, 0.08, 0.92, 0.92],
+    "boja": 1.06,
+    "kontrast": 1.05,
+    "fotograf_trava": 1.2,
+    "meki_daleki_plan": 0.4
+  },
+  {
+    "ulaz": "slike/20250913_183138.jpg",
+    "izlaz": "assets/images/galerija/03-teren.jpg",
+    "sirina": 1400,
+    "kvalitet": 78,
+    "seckanje": [0.12, 0.35, 0.88, 0.92],
+    "boja": 1.05,
+    "kontrast": 1.05,
+    "fotograf_trava": 1.25,
+    "meki_daleki_plan": 0.45
+  },
+  {
+    "ulaz": "slike/20250913_183141.jpg",
+    "izlaz": "assets/images/galerija/04-teren-blizi.jpg",
+    "sirina": 1400,
+    "kvalitet": 78,
+    "seckanje": [0.08, 0.32, 0.9, 0.95],
+    "boja": 1.05,
+    "kontrast": 1.05,
+    "fotograf_trava": 1.25,
+    "meki_daleki_plan": 0.48
+  },
+  {
+    "ulaz": "slike/20260709_180029.jpg",
+    "izlaz": "assets/images/galerija/05-porodica.jpg",
+    "duga": 1400,
+    "kvalitet": 76,
+    "seckanje": [0.0, 0.08, 1.0, 0.88],
+    "boja": 1.05,
+    "kontrast": 1.04,
+    "meki_daleki_plan": 0.35
+  },
+  {
+    "ulaz": "slike/20260629_180001.jpg",
+    "izlaz": "assets/images/galerija/06-sklopljene.jpg",
+    "sirina": 1200,
+    "kvalitet": 78,
+    "seckanje": [0.18, 0.0, 0.82, 0.78],
+    "kontrast": 1.04
+  },
+  {
+    "ulaz": "slike/20260725_175100.jpg",
+    "izlaz": "assets/images/galerija/07-more.jpg",
+    "duga": 1400,
+    "kvalitet": 74,
+    "seckanje": [0.0, 0.05, 1.0, 0.86],
+    "boja": 1.12,
+    "kontrast": 1.04
+  },
+  {
+    "ulaz": "slike/20260727_191623.jpg",
+    "izlaz": "assets/images/galerija/08-zalazak.jpg",
+    "sirina": 1400,
+    "kvalitet": 78,
+    "boja": 1.08,
+    "kontrast": 1.06
+  }
+]

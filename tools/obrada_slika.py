@@ -26,7 +26,7 @@ import json
 import sys
 from pathlib import Path
 
-from PIL import Image, ImageEnhance, ImageFilter, ImageOps
+from PIL import Image, ImageEnhance, ImageFilter, ImageMath, ImageOps
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -88,6 +88,40 @@ def doteraj(slika: Image.Image, boja: float, kontrast: float, ostrina: float) ->
     return slika
 
 
+def fotograf_trava(slika: Image.Image, jacina: float = 1.0) -> Image.Image:
+    """Blago diže zelenilo trave, kao blago razvijena fotografija. Drvo ostaje verno."""
+    rgb = slika.convert("RGB")
+    r, g, b = rgb.split()
+    maska = ImageMath.eval(
+        "convert(max(g - r, 0) * max(g - b, 0) / 28, 'L')",
+        r=r,
+        g=g,
+        b=b,
+    )
+    maska = maska.filter(ImageFilter.GaussianBlur(radius=1.2))
+    g2 = ImageEnhance.Brightness(g).enhance(1.0 + 0.08 * jacina)
+    b2 = ImageEnhance.Brightness(b).enhance(1.0 - 0.03 * jacina)
+    bogatije = Image.merge("RGB", (r, g2, b2))
+    bogatije = ImageEnhance.Color(bogatije).enhance(1.0 + 0.1 * jacina)
+    bogatije = ImageEnhance.Contrast(bogatije).enhance(1.0 + 0.04 * jacina)
+    return Image.composite(bogatije, rgb, maska)
+
+
+def meki_daleki_plan(slika: Image.Image, udeo_gore: float = 0.42) -> Image.Image:
+    """Blagi blur samo gornjeg dela kadra (daleki plan), kao plitka dubina."""
+    rgb = slika.convert("RGB")
+    mutno = rgb.filter(ImageFilter.GaussianBlur(radius=1.6))
+    maska = Image.new("L", rgb.size, 0)
+    crtez = maska.load()
+    sirina, visina = rgb.size
+    granica = int(visina * udeo_gore)
+    for y in range(granica):
+        alfa = int(160 * (1 - y / float(max(1, granica))))
+        for x in range(sirina):
+            crtez[x, y] = alfa
+    return Image.composite(mutno, rgb, maska)
+
+
 def mekana_ivica(slika: Image.Image) -> Image.Image:
     """Blagi blur samo spoljne ivice. Sredina kadra, gde je stolica, ostaje oštra."""
     rgb = slika.convert("RGB")
@@ -146,6 +180,10 @@ def obradi_kadar(stavka: dict) -> None:
         float(stavka.get("kontrast") or 1),
         float(stavka.get("ostrina") or 1.04),
     )
+    if stavka.get("fotograf_trava"):
+        slika = fotograf_trava(slika, float(stavka.get("fotograf_trava") or 1))
+    if stavka.get("meki_daleki_plan"):
+        slika = meki_daleki_plan(slika, float(stavka.get("meki_daleki_plan") or 0.42))
     if stavka.get("mekana_ivica"):
         slika = mekana_ivica(slika)
     sacuvaj(slika, izlaz, int(stavka.get("kvalitet") or 80))
