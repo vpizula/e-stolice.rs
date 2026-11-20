@@ -1,0 +1,147 @@
+[
+  {
+    "ulaz": "slike/20260725_175100.jpg",
+    "izlaz": "assets/images/hero/more.jpg",
+    "duga": 1400,
+    "kvalitet": 72,
+    "seckanje": [0.0, 0.02, 1.0, 0.9],
+    "boja": 1.12,
+    "kontrast": 1.04
+  },
+  {
+    "ulaz": "slike/20260725_175100.jpg",
+    "izlaz": "assets/images/dezeni/zelena.jpg",
+    "duga": 1100,
+    "kvalitet": 74,
+    "seckanje": [0.0, 0.22, 1.0, 0.9],
+    "boja": 1.1,
+    "kontrast": 1.04
+  },
+  {
+    "ulaz": "slike/20260725_175100.jpg",
+    "izlaz": "assets/images/360/01.jpg",
+    "duga": 1100,
+    "kvalitet": 74,
+    "seckanje": [0.0, 0.2, 1.0, 0.9],
+    "boja": 1.1,
+    "kontrast": 1.04
+  },
+  {
+    "ulaz": "slike/20260725_175100.jpg",
+    "izlaz": "assets/images/og.jpg",
+    "kvalitet": 80,
+    "seckanje": [0.08, 0.16, 1.0, 0.78],
+    "pokrivanje": [1200, 630],
+    "sidro": "sredina",
+    "boja": 1.12,
+    "kontrast": 1.05
+  },
+  {
+    "ulaz": "slike/20250913_183138.jpg",
+    "izlaz": "assets/images/upotreba/teren.jpg",
+    "sirina": 1400,
+    "kvalitet": 80,
+    "seckanje": [0.18, 0.42, 0.82, 0.9],
+    "boja": 1.06,
+    "kontrast": 1.04
+  },
+  {
+    "ulaz": "slike/20260624_182451.jpg",
+    "izlaz": "assets/images/upotreba/druzina.jpg",
+    "sirina": 1600,
+    "kvalitet": 80,
+    "seckanje": [0.0, 0.12, 1.0, 1.0],
+    "boja": 1.08,
+    "kontrast": 1.04
+  },
+  {
+    "ulaz": "slike/20260624_182451.jpg",
+    "izlaz": "assets/images/dezeni/prugasta.jpg",
+    "sirina": 1200,
+    "kvalitet": 80,
+    "seckanje": [0.55, 0.34, 0.98, 0.9],
+    "boja": 1.08,
+    "kontrast": 1.04
+  },
+  {
+    "ulaz": "slike/IMG-0a05bdba5c5cdefdaa4c2c8ce984bef4-V.jpg",
+    "izlaz": "assets/images/dezeni/prugasta-radionica.jpg",
+    "sirina": 1200,
+    "kvalitet": 80,
+    "seckanje": [0.02, 0.08, 0.55, 0.98],
+    "kontrast": 1.04
+  },
+  {
+    "ulaz": "slike/IMG-753d2dc4f2ef9b7c64c0195a96f083cb-V.jpg",
+    "izlaz": "assets/images/dezeni/narandzasta.jpg",
+    "sirina": 800,
+    "kvalitet": 78,
+    "seckanje": [0.64, 0.86, 0.92, 0.97],
+    "boja": 1.08,
+    "kontrast": 1.04
+  },
+  {
+    "ulaz": "slike/20250914_182100.jpg",
+    "izlaz": "assets/images/dezeni/plava.jpg",
+    "sirina": 1200,
+    "kvalitet": 80,
+    "seckanje": [0.06, 0.3, 0.98, 0.86],
+    "kontrast": 1.04
+  },
+  {
+    "ulaz": "slike/20250914_193037.jpg",
+    "izlaz": "assets/images/radionica/spoj.jpg",
+    "sirina": 1200,
+    "kvalitet": 80,
+    "seckanje": [0.0, 0.0, 0.78, 0.72],
+    "kontrast": 1.03
+  },
+  {
+    "ulaz": "slike/20250914_182100.jpg",
+    "izlaz": "assets/images/radionica/ram.jpg",
+    "sirina": 1200,
+    "kvalitet": 80,
+    "seckanje": [0.04, 0.26, 0.98, 0.84],
+    "kontrast": 1.03
+  },
+  {
+    "ulaz": "slike/20250914_190756.jpg",
+    "izlaz": "assets/images/radionica/stega.jpg",
+    "sirina": 1200,
+    "kvalitet": 80,
+    "seckanje": [0.0, 0.04, 1.0, 0.78],
+    "kontrast": 1.03
+  },
+  {
+    "ulaz": "slike/20250914_193413.jpg",
+    "izlaz": "assets/images/radionica/letvice.jpg",
+    "sirina": 1200,
+    "kvalitet": 80,
+    "seckanje": [0.0, 0.0, 0.92, 0.7],
+    "kontrast": 1.03
+  },
+  {
+    "ulaz": "slike/20250914_190756.jpg",
+    "izlaz": "assets/images/hero/proizvodnja.jpg",
+    "sirina": 1600,
+    "kvalitet": 80,
+    "seckanje": [0.0, 0.02, 1.0, 0.82],
+    "kontrast": 1.04
+  },
+  {
+    "ulaz": "slike/20260727_191623.jpg",
+    "izlaz": "assets/images/hero/servis.jpg",
+    "sirina": 1600,
+    "kvalitet": 80,
+    "boja": 1.08,
+    "kontrast": 1.06
+  },
+  {
+    "ulaz": "slike/20260727_191623.jpg",
+    "izlaz": "assets/images/porodica/zalazak.jpg",
+    "sirina": 1400,
+    "kvalitet": 80,
+    "boja": 1.08,
+    "kontrast": 1.05
+  }
+]
